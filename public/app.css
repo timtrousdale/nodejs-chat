@@ -38,3 +38,6 @@ body {
 .importantTag {
   font-weight: 900;
 }
+.textTyper {
+    visibility: hidden;
+}
