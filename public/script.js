@@ -7,20 +7,26 @@ $(document).ready(function () {
         name = $(".userName").val();
         $("#data").attr('placeholder', 'send message as ' + name);
         $(".textTyper").css('visibility', 'visible');
-         socket.emit('adduser', name);
+        socket.emit('adduser', name);
+        $(".submit, .username").css('visibility', 'hidden');
+        $(".userNameDisplay").html('Username: ' + name);
+
 
     });
 
-    $('#userName').keypress(function (e) {
+    $('.userName').keypress(function (e) {
         if (e.which == 13) {
             name = $(".userName").val();
             $("#data").attr('placeholder', 'send message as ' + name);
             $(".textTyper").css('visibility', 'visible');
-             socket.emit('adduser', name);
+            socket.emit('adduser', name);
+            $(".submit, .username").css('visibility', 'hidden');
+            $(".userNameDisplay").html('Username: ' + name);
+
         }
     });
 
-        function escaped(s) {
+    function escaped(s) {
         return $("<div></div>").html(s).html();
     }
 
@@ -42,18 +48,17 @@ $(document).ready(function () {
     socket.on('updateusers', function (data) {
         $('#users').empty();
         $.each(data, function (key, value) {
-            $('#users').append('<div><a href="' + searchUrlFor(key) + '" target="_blank">' + key + '</div>');
+            $('#users').append('<div>' + key + '</div>');
         });
     });
 
     socket.on('servernotification', function (data) {
-        var searchUrl = searchUrlFor(data.username);
         if (data.connected) {
             if (data.to_self) data.username = "you";
 
-            $('#conversation').append('connected: <a href="' + searchUrl + '" target="_blank">' + escaped(data.username) + "</a><br/>");
+            $('#conversation').append('connected: ' + escaped(data.username) + "<br/>");
         } else {
-            $('#conversation').append('disconnected: <a href="' + searchUrl + '" target="_blank">' + escaped(data.username) + "</a><br/>");
+            $('#conversation').append('disconnected: ' + escaped(data.username) + "<br/>");
         }
     });
 
