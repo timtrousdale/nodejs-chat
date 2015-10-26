@@ -1,14 +1,16 @@
 /* globals $, document, io */
 
 $(document).ready(function () {
+    var isCon = false;
     var name = "";
 
     $(".submit").click(function () {
+        isCon = true;
         name = $(".userName").val();
         $("#data").attr('placeholder', 'send message as ' + name);
-        $(".textTyper").css('visibility', 'visible');
+        $(".textTyper").css('display', 'block');
         socket.emit('adduser', name);
-        $(".submit, .username").css('visibility', 'hidden');
+        $(".submit, .username").css('display', 'none');
         $(".userNameDisplay").html('Username: ' + name);
 
 
@@ -16,11 +18,12 @@ $(document).ready(function () {
 
     $('.userName').keypress(function (e) {
         if (e.which == 13) {
+            isCon = true;
             name = $(".userName").val();
             $("#data").attr('placeholder', 'send message as ' + name);
-            $(".textTyper").css('visibility', 'visible');
+            $(".textTyper").css('display', 'block');
             socket.emit('adduser', name);
-            $(".submit, .username").css('visibility', 'hidden');
+            $(".submit, .username").css('display', 'none');
             $(".userNameDisplay").html('Username: ' + name);
 
         }
@@ -41,7 +44,9 @@ $(document).ready(function () {
 
     // listener, whenever the server emits 'updatechat', this updates the chat body
     socket.on('updatechat', function (username, data) {
-        $('#conversation').append('<b>' + escaped(username) + ':</b> ' + escaped(data) + "<br/>");
+        if (isCon) {
+            $('#conversation').append('<b>' + escaped(username) + ':</b> ' + escaped(data) + "<br/>");
+        }
     });
 
     // listener, whenever the server emits 'updateusers', this updates the username list

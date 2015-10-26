@@ -14,8 +14,14 @@ app.use(express.bodyParser());
 app.use(app.router);
 app.use('/public', express.static('public'));
 
+//Get Main Page
 app.get('/', function (req, res) {
   res.render('index');
+});
+
+//GET Chat Server
+app.get('/chat', function (req, res) {
+  res.render('chat');
 });
 
 io.sockets.on('connection', function(socket) {

@@ -1,0 +1,54 @@
+<html>
+
+<head>
+    <title>Node Chat App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/public/js/jquery-1.11.3.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/public/js/script.js"></script>
+    <link rel="stylesheet" href="/public/css/bootstrap.css" />
+    <script src="/public/css/bootstrap.js"></script>
+    <link rel="stylesheet" href="/public/css/app.css" />
+</head>
+
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Node Chat App</a>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                </ul>
+            </div>
+            <!--/.nav-collapse -->
+        </div>
+    </div>
+
+    <div class="container">
+        <div id="dashboard">
+            <div class="row" />
+            <div class="col-md-4">
+                <b class="userNameDisplay">Username</b>
+                <input class="userName" type="text" name="UserName" placeholder="Enter your Chat Name">
+                <input class="submit" type="submit" value="Submit">
+                <hr />
+                <div id="users"></div>
+                <hr class="visible-xs visible-sm" />
+            </div>
+            <div class="col-md-8">
+                <input class="col-md-12 textTyper" id="data" placeholder="send message" />
+                <hr/>
+                <div id="conversation"></div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
