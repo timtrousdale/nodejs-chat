@@ -217,7 +217,6 @@ hr.small {
 }
 
 
-
 /* Call to Action */
 
 .call-to-action {
@@ -256,11 +255,11 @@ footer {
     width: 100%;
     font-size: 2em;
 }
+
 .portfolio-item:hover .floater {
- display: inline;   
+    display: inline;
 }
 
 .portfolio-item:hover .img-portfolio {
     opacity: 0.8;
-
 }
