@@ -231,7 +231,7 @@ hr.small {
 /* Map */
 
 .map {
-    height: 500px;
+    height: 320px;
 }
 
 @media(max-width:768px) {
@@ -262,4 +262,15 @@ footer {
 
 .portfolio-item:hover .img-portfolio {
     opacity: 0.8;
+}
+
+.headerText {
+    text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
+}
+.whiteText {
+ color: aliceblue   
+}
+.contactInfo {
+ width: 75%;
+		
 }

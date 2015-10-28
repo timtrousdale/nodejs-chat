@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Timothy Trousdale</title>
+    <title>Timothy Trousdale's Portfolio</title>
     <link href="/public/css/bootstrap.css" rel="stylesheet">
 
     <!-- Custom CSS -->
@@ -33,22 +33,25 @@
         <ul class="sidebar-nav">
             <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
             <li class="sidebar-brand">
-                <a href="#top"  onclick = $("#menu-close").click(); >Start Bootstrap</a>
+                <a href="#top" onclick=$ ( "#menu-close").click();>Navigation</a>
             </li>
             <li>
-                <a href="#top" onclick = $("#menu-close").click(); >Home</a>
+                <a href="#top" onclick=$ ( "#menu-close").click();>Home</a>
             </li>
             <li>
-                <a href="#about" onclick = $("#menu-close").click(); >About</a>
+                <a href="#about" onclick=$ ( "#menu-close").click();>About me</a>
             </li>
             <li>
-                <a href="#services" onclick = $("#menu-close").click(); >Services</a>
+                <a href="#awards" onclick=$ ( "#menu-close").click();>Awards</a>
             </li>
             <li>
-                <a href="#portfolio" onclick = $("#menu-close").click(); >Portfolio</a>
+                <a href="#resume" onclick=$ ( "#menu-close").click();>Resume</a>
             </li>
             <li>
-                <a href="#contact" onclick = $("#menu-close").click(); >Contact</a>
+                <a href="#myWork" onclick=$ ( "#menu-close").click();>My Work</a>
+            </li>
+            <li>
+                <a href="#contact" onclick=$ ( "#menu-close").click();>Contact me</a>
             </li>
         </ul>
     </nav>
@@ -56,11 +59,12 @@
     <!-- Header -->
     <header id="top" class="header">
         <div class="text-vertical-center">
-            <h1>Timothy Trousdale</h1>
-            <h3>Once a Chef developing delights<br>
-            Now seraching to fly to new Heights</h3>
-            <br>
-            <a href="#about" class="btn btn-dark btn-lg">Find Out More</a>
+            <div class="headerText">
+                <h1>Timothy Trousdale</h1>
+                <h3>Former chef turned Web Developer</h3>
+            </div>
+            <a href="#contact" class="btn btn-dark btn-lg">Contact Me</a>
+
         </div>
     </header>
 
@@ -81,11 +85,11 @@
 
     <!-- Services -->
     <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
-    <section id="services" class="services bg-primary">
+    <section id="awards" class="services bg-primary">
         <div class="container">
             <div class="row text-center">
                 <div class="col-lg-10 col-lg-offset-1">
-                    <h2>My Work</h2>
+                    <h2>Awards and Commendations</h2>
                     <hr class="small">
                     <div class="row">
                         <div class="col-md-3 col-sm-6">
@@ -95,10 +99,9 @@
                                 <i class="fa fa-comments-o fa-stack-1x text-primary"></i>
                             </span>
                                 <h4>
-                                    <strong>Node.js Chat Server</strong>
+                                    <strong>2011 Employee of the Year<br>HGI Sandy</strong>
                                 </h4>
-                                <p>A Node.js based chat server<br>using socket.io</p>
-                                <a href="#" class="btn btn-light">Join Chat</a>
+                                <p>Winner for my property</p>
                             </div>
                         </div>
                         <div class="col-md-3 col-sm-6">
@@ -108,10 +111,9 @@
                                 <i class="fa fa-gamepad fa-stack-1x text-primary"></i>
                             </span>
                                 <h4>
-                                    <strong>Game of Cards</strong>
+                                    <strong>2011 Employee of the Year<br>Woodbury Corporation</strong>
                                 </h4>
-                                <p>A variation on the card game War<br>using jQuery</p>
-                                <a href="#" class="btn btn-light">Learn More</a>
+                                <p>The winner is chosen from amongst the individual hotel winners</p>
                             </div>
                         </div>
                         <div class="col-md-3 col-sm-6">
@@ -121,10 +123,9 @@
                                 <i class="fa fa-calendar fa-stack-1x text-primary"></i>
                             </span>
                                 <h4>
-                                    <strong>MLATC Calendar</strong>
+                                    <strong>2012 Spirit of the Garden Winner</strong>
                                 </h4>
-                                <p>A web app used to calculate the duration of open enrollment classes</p>
-                                <a href="#" class="btn btn-light">Learn More</a>
+                                <p>Employee of the Year award for the Hilton Garden Inn Global Brand</p>
                             </div>
                         </div>
                         <div class="col-md-3 col-sm-6">
@@ -134,10 +135,10 @@
                                 <i class="fa fa-child fa-stack-1x text-primary"></i>
                             </span>
                                 <h4>
-                                    <strong>Baby Guessing Game</strong>
+                                    <strong>Best Uncle Ever Award</strong>
                                 </h4>
-                                <p>A game for family members to guess my neice's statistics using Firebase</p>
-                                <a href="#" class="btn btn-light">Learn More</a>
+                                <p>Given to me by my newborn niece
+                                    <br>(I may have cheated on this one)</p>
                             </div>
                         </div>
                     </div>
@@ -151,25 +152,27 @@
     </section>
 
     <!-- Callout -->
-    <aside class="callout">
+    <aside id="resume" class="callout">
         <div class="text-vertical-center">
-            <h1>Vertically Centered Text</h1>
+            <h1>Resume and Work Experience</h1>
+            <h3><a class="whiteText" href="#contact">Conact me for more info</a></h3>
+            <a href="#" class="btn btn-dark">View Resume</a>
         </div>
     </aside>
 
     <!-- Portfolio -->
-    <section id="portfolio" class="portfolio">
+    <section id="myWork" class="portfolio">
         <div class="container">
             <div class="row">
                 <div class="col-lg-10 col-lg-offset-1 text-center">
-                    <h2>Our Work</h2>
+                    <h2>My Work</h2>
                     <hr class="small">
                     <div class="row">
                         <div class="col-md-6">
                             <div class="portfolio-item">
                                 <a href="#">
                                     <img class="img-portfolio img-responsive" src="/public/img/portfolio-1.jpg">
-                                    <span class ="floater">A Node.js based chat server</span>
+                                    <span class="floater">A Node.js based chat server<br>using socket.io</span>
                                 </a>
                             </div>
                         </div>
@@ -177,6 +180,7 @@
                             <div class="portfolio-item">
                                 <a href="#">
                                     <img class="img-portfolio img-responsive" src="/public/img/portfolio-2.jpg">
+                                    <span class="floater">A variation on the card game War<br>using jQuery</span>
                                 </a>
                             </div>
                         </div>
@@ -184,6 +188,8 @@
                             <div class="portfolio-item">
                                 <a href="#">
                                     <img class="img-portfolio img-responsive" src="/public/img/portfolio-3.jpg">
+                                    <span class="floater">A web app used to calculate<br> the duration of open enrollment<br>classes</span>
+
                                 </a>
                             </div>
                         </div>
@@ -191,12 +197,13 @@
                             <div class="portfolio-item">
                                 <a href="#">
                                     <img class="img-portfolio img-responsive" src="/public/img/portfolio-4.jpg">
+                                    <span class="floater">A game for family members to<br>guess my neice's statistics.<br>Built in one day using Firebase</span>
+
                                 </a>
                             </div>
                         </div>
                     </div>
                     <!-- /.row (nested) -->
-                    <a href="#" class="btn btn-dark">View More Items</a>
                 </div>
                 <!-- /.col-lg-10 -->
             </div>
@@ -206,22 +213,22 @@
     </section>
 
     <!-- Call to Action -->
-    <aside class="call-to-action bg-primary">
+    <aside id="contact" class="call-to-action bg-primary">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h3>The buttons below are impossible to resist.</h3>
-                    <a href="#" class="btn btn-lg btn-light">Click Me!</a>
-                    <a href="#" class="btn btn-lg btn-dark">Look at Me!</a>
+                    <h3>Feel free to leave your name and the contact info of your hiring department<br>and I will contact them as soon as possible</h3>
+                    <textarea class="contactInfo" placeholder="Any info you enter here will be automatically emailed to me..."/></textarea><br>
+                    <a href="#" class="btn btn-lg btn-dark">Send to me!</a>
                 </div>
             </div>
         </div>
     </aside>
 
     <!-- Map -->
-    <section id="contact" class="map">
+    <section class="map">
         <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.5763886925097!2d-111.7839426842763!3d40.44037806212429!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x874d80a3d7d3f781%3A0x9997ebe94ca21a9f!2s886+Braddock+Ln%2C+Alpine%2C+UT+84004!5e0!3m2!1sen!2sus!4v1445961205667"></iframe>
-       
+
     </section>
 
     <!-- Footer -->
@@ -231,22 +238,11 @@
                 <div class="col-lg-10 col-lg-offset-1 text-center">
                     <h4><strong>Timothy Trousdale</strong>
                     </h4>
-                    <p>886 Braddock Lane<br>Alpine, UT 84004</p>
+                    <p>886 Braddock Lane
+                        <br>Alpine, UT 84004</p>
                     <ul class="list-unstyled">
                         <li><i class="fa fa-phone fa-fw"></i> (801) 717-8983</li>
-                        <li><i class="fa fa-envelope-o fa-fw"></i>  <a href="mailto:timtrousdale@gmail.com">TimTrousdale@gmail.com</a>
-                        </li>
-                    </ul>
-                    <br>
-                    <ul class="list-inline">
-                        <li>
-                            <a href="#"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-dribbble fa-fw fa-3x"></i></a>
+                        <li><i class="fa fa-envelope-o fa-fw"></i> <a href="mailto:timtrousdale@gmail.com">timtrousdale@gmail.com</a>
                         </li>
                     </ul>
                     <hr class="small">
@@ -264,34 +260,34 @@
 
     <!-- Custom Theme JavaScript -->
     <script>
-    // Closes the sidebar menu
-    $("#menu-close").click(function(e) {
-        e.preventDefault();
-        $("#sidebar-wrapper").toggleClass("active");
-    });
-
-    // Opens the sidebar menu
-    $("#menu-toggle").click(function(e) {
-        e.preventDefault();
-        $("#sidebar-wrapper").toggleClass("active");
-    });
-
-    // Scrolls to the selected menu item on the page
-    $(function() {
-        $('a[href*=#]:not([href=#])').click(function() {
-            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
-
-                var target = $(this.hash);
-                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-                if (target.length) {
-                    $('html,body').animate({
-                        scrollTop: target.offset().top
-                    }, 1000);
-                    return false;
-                }
-            }
+        // Closes the sidebar menu
+        $("#menu-close").click(function (e) {
+            e.preventDefault();
+            $("#sidebar-wrapper").toggleClass("active");
         });
-    });
+
+        // Opens the sidebar menu
+        $("#menu-toggle").click(function (e) {
+            e.preventDefault();
+            $("#sidebar-wrapper").toggleClass("active");
+        });
+
+        // Scrolls to the selected menu item on the page
+        $(function () {
+            $('a[href*=#]:not([href=#])').click(function () {
+                if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+
+                    var target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                    if (target.length) {
+                        $('html,body').animate({
+                            scrollTop: target.offset().top
+                        }, 1000);
+                        return false;
+                    }
+                }
+            });
+        });
     </script>
 
 </body>
